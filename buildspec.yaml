@@ -1,7 +1,10 @@
 version: 0.2
-phases:
- install:
-   commands:
+phases: 
+  install: 
+    runtime-versions: 
+        php: 7.3 
+  build: 
+  commands:
      - echo "install step"
  pre_build:
    commands:
