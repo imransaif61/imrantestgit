@@ -11,7 +11,7 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - aws s3 sync --delete . "s3:::codepipeline-eu-west-2-922126377523"
+     - aws s3 sync --delete . arn:aws:s3:::codepipeline-eu-west-2-922126377523
  post_build:
    commands:
      - echo "post_build step"
