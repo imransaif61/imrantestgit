@@ -5,7 +5,7 @@ phases:
         php: 7.3 
   build: 
   commands:
-     - echo "install step"
+      - php --version 
  pre_build:
    commands:
      - echo "pre_build step"
